@@ -1,0 +1,514 @@
+@media(max-width: 1250px) {
+  .container {
+    max-width: 1100px;
+    width: 970px;
+  }
+
+  main {
+    .home-banner {
+      .container {
+        .text-box {
+          flex-basis: 70%;
+        }
+        .img-box {
+          flex-basis: 30%;
+          img {
+            width: 200%;
+            bottom: -150px;
+            left: -200px;
+          }
+        }
+      }
+    }
+    .offer {
+      .container {
+        .box-offer-img {
+          .items {
+            &:nth-of-type(5) {
+              margin-left: 120px;
+            }
+            &:nth-of-type(7) {
+              margin-right: 120px;
+            }
+          }
+        }
+      }
+    }
+    .contact {
+      .container {
+        .contact-info {
+          h2 {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width: 992px) {
+  .container {
+    max-width: 1100px;
+    width: 750px;
+  }
+
+  nav {
+    .container {
+      .menu {
+        ul {
+          li {
+            margin: 0 10px;
+            a {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    .home-banner {
+      height: 700px;
+      .first-bg {
+        height: 900px;
+      }
+      .container {
+        .text-box {
+          h1 {
+            font-size: 55px;
+          }
+        }
+        .img-box {
+          img {
+            bottom: -100px;
+            left: -130px;
+          }
+        }
+      }
+    }
+
+    .offer {
+      .container {
+        .box-offer-img {
+          .items {
+            &:nth-of-type(5) {
+              margin-left: 95px;
+            }
+            &:nth-of-type(7) {
+              margin-right: 95px;
+            }
+          }
+        }
+        .box-offer-text {
+          flex-direction: column;
+          height: auto;
+
+          .text {
+            flex-basis: auto;
+
+            h4:nth-of-type(2) {
+              width: 100%;
+              margin-bottom: 30px;
+            }
+          }
+
+          .images {
+            flex-basis: auto;
+            height: 500px;
+            img {
+              width: 300px;
+              height: 300px;
+
+              &:nth-of-type(1) {
+                left: 50%;
+                top: 150px;
+                transform: translateX(-75%);
+              }
+              &:nth-of-type(2) {
+                left: 50%;
+                transform: translateX(-25%);
+
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .realizations {
+      margin-top: 0;
+    }
+
+    .contact {
+      .container {
+        .contact-info {
+          flex-basis: 60%;
+        }
+        .form {
+          flex-basis: 40%;
+        }
+      }
+    }
+  }
+
+  footer {
+    .container {
+      .menu {
+        ul {
+          li {
+            a {
+              margin: 0 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width: 770px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  nav {
+    background: #000;
+    position: fixed;
+
+    .container {
+
+      .logo {
+        align-self: center;
+        z-index: 2;
+
+        img {
+          width: 140px;
+        }
+      }
+
+      .hamburger {
+        display: block;
+        position: relative;
+        width: 50px;
+        height: 30px;
+        margin-right: 0px;
+        cursor: pointer;
+
+        span {
+          width: 25px;
+          height: 2px;
+          display: block;
+          background-color: white;
+          margin: 0 auto;
+          margin-bottom: 5px;
+
+          &::before {
+            content: '';
+            width: 2px;
+            height: 2px;
+            background-color: white;
+            position: absolute;
+            right: 42px;
+          }
+        }
+
+        p {
+          color: white;
+          text-transform: uppercase;
+          font-weight: 500;
+          letter-spacing: 1px;
+          position: absolute;
+          right: 9px;
+          font-size: 10px;
+        }
+      }
+
+      .menu {
+
+        ul {
+          width: 100%;
+          height: 0px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          overflow: hidden;
+          position: absolute;
+          top: 99px;
+          left: 0;
+          background-color: black;
+          margin: 0;
+          transition: 0.5s;
+
+          li {
+            display: block;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+
+    &.opened {
+      .container {
+        .menu {
+          ul {
+            height: 250px;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+
+    .home-banner {
+      height: 800px;
+      .first-bg,
+      .second-bg {
+        display: none;
+      }
+
+      .third-bg {
+        display: block;
+      }
+
+      .container {
+        .text-box {
+          flex-basis: 100%;
+          padding: 0 50px;
+          h1 {
+            font-size: 43px;
+          }
+
+
+          img {
+            display: block;
+            width: 80%;
+            margin-top: -20px;
+            margin-left: 50px;
+          }
+          a {
+            margin: 25px auto;
+          }
+        }
+
+        .img-box {
+          display: none;
+        }
+      }
+    }
+
+    .info {
+      .container {
+        h4 {
+          width: 100%;
+        }
+      }
+    }
+
+    .offer {
+      .container {
+        .box-offer-img {
+          .items {
+            flex-basis: 48%;
+
+            &:nth-of-type(5) {
+              margin-left: 0px;
+            }
+
+            &:nth-of-type(7) {
+              margin: 0 auto;
+            }
+          }
+        }
+
+        .box-offer-text {
+          flex-direction: column;
+          height: auto;
+
+          .text {
+            flex-basis: auto;
+            h2 {
+              font-size: 28px;
+              span {
+                display: inline-block;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .realizations {
+      .container {
+        a.btn-orange {
+          margin-right: 15px;
+        }
+        a.btn-light {
+          margin-left: 15px;
+        }
+
+        .box-items {
+          flex-direction: column;
+
+          .item {
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+
+    .news {
+      margin-top: 0px;
+      padding: 15px 0 30px;
+      background-color: rgb(246, 246, 246);
+
+      .container {
+        h2 {
+          margin-top: 15px;
+        }
+
+        .box-items {
+          flex-direction: column;
+
+          .item {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+
+    .contact {
+      height: auto;
+      .container {
+        flex-direction: column;
+
+        .contact-info {
+          h2 {
+            font-size: 36px;
+          }
+        }
+
+        .form {
+          form {
+            margin-top: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .container {
+      .menu {
+        ul {
+          flex-direction: column;
+          text-align: center;
+
+          li {
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+      p {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+@media(max-width: 490px) {
+  main {
+    .home-banner {
+      .container {
+        .text-box {
+          padding: 0;
+          h1 {
+            font-size: 24px;
+          }
+          p {
+            font-size: 12px;
+            max-width: 300px;
+          }
+          img {
+            margin: -20px auto 0;
+          }
+        }
+      }
+    }
+
+    .offer {
+      .container {
+        .box-offer-text {
+          .images {
+            img {
+              &:nth-of-type(1) {
+                left: 0%;
+                transform: translateX(0%);
+              }
+              &:nth-of-type(2) {
+                left: 100%;
+                transform: translateX(-100%);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .realizations {
+      .container {
+        a.btn-orange {
+          margin: 15px 15px 0;
+        }
+        a.btn-light {
+          margin: 15px 15px 0;
+        }
+      }
+    }
+
+  }
+}
+@media(max-width: 420px) {
+  main {
+
+    .offer {
+      .container {
+        .box-offer-text {
+          .text {
+            h2 {
+              font-size: 24px;
+              letter-spacing: 2px;
+            }
+          }
+        }
+      }
+    }
+
+    .contact {
+      .container {
+        .contact-info {
+          h2 {
+            font-size: 24px;
+          }
+          p {
+            margin: 30px 10px 50px 0px;
+            font-size: 12px;
+          }
+          .facebook,
+          .phone,
+          .address {
+            margin-left: 0px;
+            font-size: 12px;
+          }
+        }
+        .form {
+          form {
+            margin: 0;
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+}
